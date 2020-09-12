@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="surveyfor.css">
+	<title>Survey form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">GBU's Hostel Survey form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve...
+    </p>
+</header>
+<form id="survey-form">
+	<label id="name">Name</label>
+       <input type="text" name="NAME" placeholder="enter your name" required>
+     <label id="email">Email-id</label>
+       <input type="email" name="NAME" placeholder="enter your Email-id" required>
+     <label for="number">Contact-Number</label>
+       <input type="number" id="number" placeholder="enter your contact number" minlength="10" maxlength="10" required>
+     <label>Age</label>
+       <input type="number" placeholder="enter your age" min="17" max="40" required>
+	<label>Hostel Name</label>
+       <input type="text" name="NAME" placeholder="enter your hostel name" required>
+    <label>Room No.</label>
+       <input type="text" name="Room Number" placeholder="enter your room number" required>
+    <p>How is overall environment in hostel?</p>
+    <label><input type="radio" name="environment" value="excellent">Excellent</label>
+    <label><input type="radio" name="environment" value="Good">Good</label>
+    <label><input type="radio" name="environment" value="Satisfactory">Satisfactory</label>
+    <label><input type="radio" name="environment" value="Poor">Poor</label>
+    <p>How are security measures in hostels?</p>
+    <label><input type="radio" name="security" value="Excellent">Excellent</label>
+    <label><input type="radio" name="security" value="Good">Good</label>
+    <label><input type="radio" name="security" value="Satisfactory">Satisfactory</label>
+    <label><input type="radio" name="security" value="Poor">Poor</label>
+    <p>Rate cleanliness of hostel premises (outside of room)</p>
+    <label><input type="radio" name="cleanliness" value="Excellent">Excellent</label>
+    <label><input type="radio" name="cleanliness" value="Good">Good</label>
+    <label><input type="radio" name="cleanliness" value="Satisfactory">Satisfactory</label>
+    <label><input type="radio" name="cleanliness" value="Poor">Poor</label>
+    <p>Hostel campus is ragging free.</p>
+    <label><input type="radio" name="ragging" value="Yes">Yes</label>
+    <label><input type="radio" name="ragging" value="No">No</label>
+    <p>	Check the facilities that is need to be improved in your room</p>
+    <label><input type="checkbox" name="facilities" value="Furniture">Furniture</label>
+    <label><input type="checkbox" name="facilities" value="Electric-Fittings">Electric-Fittings</label>
+    <label><input type="checkbox" name="facilities" value="Lan-Connectivity">Lan-Connectivity</label>
+    <p>Drinking water is available in hostel:</p>
+    <select>
+    	<option value="never">Never</option>
+    	<option value="most-of-the-time">most-of-the-time</option>
+    	<option value="always">always</option>
+    </select>
+    <p>Electricity is available within hostel:</p>
+    <select>
+    	<option value="never">Never</option>
+    	<option value="most-of-the-time">most-of-the-time</option>
+    	<option value="always">always</option>
+    </select>
+    <p>Streetlights outside hostel are working:</p>
+    <select>
+    	<option value="never">Never</option>
+    	<option value="most-of-the-time">most-of-the-time</option>
+    	<option value="always">always</option>
+    </select>
+    <p>Electric fittings inside bathroom and verandas of hostel areworking:</p>
+    <select>
+    	<option value="never">Never</option>
+    	<option value="most-of-the-time">most-of-the-time</option>
+    	<option value="always">always</option>
+    </select>
+    <p>Caretakers are available 24*7 for assistance:</p>
+    <select>
+    	<option value="never">Never</option>
+    	<option value="most-of-the-time">most-of-the-time</option>
+    	<option value="always">always</option>
+    </select>
+    <p>Any comments or suggestions?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+
+      <div><button type="Submit" class="Submit">Submit</button></div>
+</form>
+</div>
+</body>
+</html>
